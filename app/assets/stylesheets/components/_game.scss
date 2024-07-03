@@ -1,0 +1,47 @@
+body {
+  background-color: darkmagenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(235, 149, 175);
+}
+
+p {
+  color: lightsalmon;
+}
+
+form {
+  color: lightsalmon;
+
+  .input {
+    background-color: darkorchid;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .input:hover {
+    background-color: lightcoral;
+  }
+}
+
+
+
+
+.notice {
+  background-color: darkmagenta;
+  color: lightseagreen;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.alert {
+  background-color: darkmagenta;
+  color: #f52439;
+  font-size: larger;
+  padding: 10px;
+  margin: 10px 0;
+}
