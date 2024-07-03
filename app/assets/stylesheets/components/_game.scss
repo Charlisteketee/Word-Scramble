@@ -6,16 +6,29 @@ body {
   align-items: center;
 }
 
+.elephant-container {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: rgb(235, 149, 175);
 }
 
 p {
   color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
   color: lightsalmon;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   .input {
     background-color: darkorchid;
@@ -23,9 +36,9 @@ form {
     border-radius: 2px;
   }
   
-  .input:hover {
-    background-color: lightcoral;
-  }
+  // .input:hover {
+  //   background-color: lightcoral;
+  // }
 }
 
 

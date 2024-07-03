@@ -1,20 +1,26 @@
 <h1>Word Scramble</h1>
 
-<p>Welcome, <%= current_user.email %>! Your current score is: <%= current_user.score %></p>
-
-<p>Unscramble the following word:</p>
-<p><%= @scrambled_word %></p>
-
-<%= form_with url: game_guess_path, method: :post do %>
-  <%= hidden_field_tag :word_id, @word.id %>
-  <div class="form-group">
-    <%= label_tag :guess, "Your Guess" %>
-    <%= text_field_tag :guess %>
+<div class="container">
+  <div class="elephant-container">
+    <img src="/images/elephant.gif" alt="Cute Elephant" class="elephant-gif">
   </div>
-  <div class="form-group">
-    <%= submit_tag "Submit" %>
-  </div>
-<% end %>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <p>Welcome, <%= current_user.email %>! Your current score is: <%= current_user.score %></p>
+
+  <p>Unscramble the following word:</p>
+  <p><%= @scrambled_word %></p>
+
+  <%= form_with url: game_guess_path, method: :post do %>
+    <%= hidden_field_tag :word_id, @word.id %>
+    <div class="form-group">
+      <%= label_tag :guess, "Your Guess" %>
+      <%= text_field_tag :guess %>
+    </div>
+    <div class="form-group">
+      <%= submit_tag "Submit" %>
+    </div>
+  <% end %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</div>
